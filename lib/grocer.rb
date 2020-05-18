@@ -29,7 +29,8 @@ end
 def consolidate_cart(cart)
   new_cart = Array.new
   i = 0 
-  while (find_item_by_name_in_collection(cart[i][:item], new_cart) == nil )
+  while i < cart.length do 
+    if (find_item_by_name_in_collection(cart[i][:item], new_cart) == nil )
   cart[i][:count] = 1 
   new_cart.push(cart[i]
 else

@@ -33,7 +33,7 @@ def consolidate_cart(cart)
   cart[i][:count] = 1 
   new_cart.push(cart[i]
 else
-  increment_count_of_item(cart, item_name)
+  increment_count_of_item(new_cart, cart[i])
   
   
   # Consult README for inputs and outputs

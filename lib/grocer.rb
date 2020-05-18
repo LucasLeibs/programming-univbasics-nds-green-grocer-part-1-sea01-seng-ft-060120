@@ -35,13 +35,14 @@ def consolidate_cart(cart)
 else
   increment_count_of_item(new_cart, cart[i][:item])
 end
-  
+  i += 1
+end
   
   # Consult README for inputs and outputs
   #
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
-
+new_cart
 end
 
 

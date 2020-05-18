@@ -31,6 +31,7 @@ def consolidate_cart(cart)
   i = 0 
   while (find_item_by_name_in_collection(cart[i][:item], new_cart) == nil )
   cart[i][:count] = 1 
+  new_cart.push
   
   # Consult README for inputs and outputs
   #
